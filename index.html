@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" lang="en" content="Denis Narushevich, Rainmaker Ltd." />
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/home.css"/>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/guides.js"></script>
+		<script type="text/javascript" src="js/home.js"></script>
+		<script>
+			$(window).scroll(function(event){
+				var phi = $('#philosophy').parent().height();
+				var rea = $('#realisations').parent().height();
+				var ofr = $('#offre').parent().height();
+				var fair = $('#faire').parent().height();
+				var nou = $('#nous').parent().height();
+				var ct = $('#contact').parent().height();
+				var s0 = $(window).scrollTop();
+				var s = s0+phi;
+				var r, h, f;
+				
+				//logo
+				if(s0 < phi){ //first page
+					if(phi-s0 <= 126){
+						if(phi-s0 >= 16){
+							h = phi-s0-16;
+						}else{
+							h = 0;
+						}
+					}else{
+						h = 110;
+					}
+					
+					$('.logos > *').css({
+						height: 0
+					});
+					$('#logo1').css({
+						height: h
+					});
+					$('#logo2').css({
+						height: 110-h,
+						backgroundPosition: 'left bottom'
+					});
+				}else	if(s0 <= phi+rea){
+					if(phi+rea-s0 <= 126){
+						if(phi+rea-s0 >= 16){
+							h = phi+rea-s0-16;
+						}else{
+							h = 0;
+						}
+					}else{
+						h = 110;
+					}
+					
+					$('.logos > *').css({
+						height: 0
+					});
+					$('#logo2').css({
+						height: h,
+						backgroundPosition: 'left top'
+					});
+					$('#logo3').css({
+						height: 110-h,
+						backgroundPosition: 'left bottom'
+					});
+				}else	if(s0 < phi+rea+ofr){ //second
+					if(phi+rea+ofr-s0 <= 126){
+						if(phi+rea+ofr-s0 >= 16){
+							h = phi+rea+ofr-s0-16;
+						}else{
+							h = 0;
+						}
+					}else{
+						h = 110;
+					}
+					
+					$('.logos > *').css({
+						height: 0
+					});
+					$('#logo3').css({
+						height: h,
+						backgroundPosition: 'left top'
+					});
+					$('#logo4').css({
+						height: 110-h,
+						backgroundPosition: 'left bottom'
+					});
+				}else	if(s0 < phi+rea+ofr+fair){
+					if(phi+rea+ofr+fair-s0 <= 126){
+						if(phi+rea+ofr+fair-s0 >= 16){
+							h = phi+rea+ofr+fair-s0-16;
+						}else{
+							h = 0;
+						}
+					}else{
+						h = 110;
+					}
+					
+					$('.logos > *').css({
+						height: 0
+					});
+					$('#logo4').css({
+						height: h,
+						backgroundPosition: 'left top'
+					});
+					$('#logo5').css({
+						height: 110-h,
+						backgroundPosition: 'left bottom'
+					});
+				}else	if(s0 < phi+rea+ofr+fair+nou){
+					if(phi+rea+ofr+fair+nou-s0 <= 126){
+						if(phi+rea+ofr+fair+nou-s0 >= 16){
+							h = phi+rea+ofr+fair+nou-s0-16;
+						}else{
+							h = 0;
+						}
+					}else{
+						h = 110;
+					}
+					
+					$('.logos > *').css({
+						height: 0
+					});
+					$('#logo5').css({
+						height: h,
+						backgroundPosition: 'left top'
+					});
+					$('#logo6').css({
+						height: 110-h,
+						backgroundPosition: 'left bottom'
+					});
+				}else{
+					if(phi+rea+ofr+fair+nou+ct-s0 <= 126){
+						if(phi+rea+ofr+fair+nou+ct-s0 >= 16){
+							h = phi+rea+ofr+fair+nou+ct-s0-16;
+						}else{
+							h = 110;
+						}
+					}else{
+						h = 110;
+					}
+					
+					$('.logos > *').css({
+						height: 0
+					});
+					$('#logo6').css({
+						height: h,
+						backgroundPosition: 'left top'
+					});
+				}			
+			});
+			
+			$(function(){
+				$(window).trigger('scroll');
+			});
+		</script>
+  </head>
+  <body>
+		<div class="page" id="page">
+			<div class="navToolContainer">
+				<div id="navTool">
+					<div class="logos">
+						<div class="white" id="logo1"></div>
+						<div class="gray" id="logo2"></div>
+						<div class="white" id="logo3"></div>
+						<div class="gray" id="logo4"></div>
+						<div class="white" id="logo5"></div>
+						<div class="gray" id="logo6"></div>
+					</div>
+					<div class="guides">
+						<div>
+							<div class="orange"></div>
+							<div class="blue"></div>
+							<div class="dot"></div>
+							<div class="name" onclick="guides.scrollTo('philosophy');">notre philosophie</div>
+						</div>
+						<div>
+							<div class="orange"></div>
+							<div class="blue"></div>
+							<div class="dot"></div>
+							<div class="name" onclick="guides.scrollTo('realisations');">nos realisations</div>
+						</div>
+						<div>
+							<div class="orange"></div>
+							<div class="blue"></div>
+							<div class="dot"></div>
+							<div class="name" onclick="guides.scrollTo('offre');">notre offre</div>
+						</div>
+						<div>
+							<div class="orange"></div>
+							<div class="blue"></div>
+							<div class="dot"></div>
+							<div class="name" onclick="guides.scrollTo('faire');">notre savoir faire</div>
+						</div>
+						<div>
+							<div class="orange"></div>
+							<div class="blue"></div>
+							<div class="dot"></div>
+							<div class="name" onclick="guides.scrollTo('nous');">qui sommes-nous?</div>
+						</div>
+						<div>
+							<div class="orange"></div>
+							<div class="blue"></div>
+							<div class="dot"></div>
+							<div class="name" onclick="guides.scrollTo('contact');">contact</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="topicContainer">
+				<div class="topic" id="philosophy">
+					<div class="mainMenu">
+						<div class="left">
+							<a href="index.html" class="button">accuel</a>
+							<a class="button">noter offer</a>
+							<a class="button">qui-sommes nous?</a>
+							<a href="realisations.html" class="button">nos realisations</a>
+							<a class="button">jobs</a>
+							<a class="button">contact</a>
+						</div>
+
+						<div class="right">
+							<a class="socialButton linkedin"></a>
+							<a class="socialButton twitter"></a>
+							<a class="socialButton facebook"></a>
+						</div>
+					</div>
+					<div class="line"></div>
+					<!--
+					<div class="moto">
+						<div>
+							<div>
+								<span class="we">We are</span>
+								<span class="not">not</span>
+								<div class="georgia">making sites or apps</div>
+							</div>
+							<div class="building">we are building</div>
+						</div>
+						<div class="machines">business machines</div>
+					</div>-->
+					<div class="moto2"></div>
+					<div class="topicHeadingBox">
+						<div class="line"></div>
+						<div class="container"><span>notre philosophie</span></div>
+						<div class="bubble"><span>voir tout</span></div>
+					</div>
+					<div class="list">
+						<div>La technique et la creativite au service du business</div>
+						<div>Des associes a la pointe et au cœur du digital</div>
+						<div>Un business model low cost</div>
+					</div>
+				</div>
+				<div class="bottomShadow"></div>
+			</div>
+			<div class="topicContainer odd">
+				<div class="topic" id="realisations">
+					<div class="topicHeadingBox">
+						<div class="line"></div>
+						<div class="container"><span>nos realisations</span></div>
+						<div class="bubble"><span>voir tout</span></div>
+					</div>
+					<div class="galleryContainer">
+						<a class="galleryItem">
+							<img src="http://placekitten.com/g/185/185"/>
+							<div class="overlay"></div>
+							<h2>Below the salt</h2>
+							<p>E-commerce, image, comunataire</p>
+						</a>
+						<a class="galleryItem">
+							<img src="http://placekitten.com/g/185/185"/>
+							<div class="overlay"></div>
+							<h2>Below the salt</h2>
+							<p>E-commerce, image, comunataire</p>
+						</a>
+						<a class="galleryItem">
+							<img src="http://placekitten.com/g/185/185"/>
+							<div class="overlay"></div>
+							<h2>Below the salt</h2>
+							<p>E-commerce, image, comunataire</p>
+						</a>
+						<a class="galleryItem">
+							<img src="http://placekitten.com/g/185/185"/>
+							<div class="overlay"></div>
+							<h2>Below the salt</h2>
+							<p>E-commerce, image, comunataire</p>
+						</a>
+						<a class="galleryItem">
+							<img src="http://placekitten.com/g/185/185"/>
+							<div class="overlay"></div>
+							<h2>Below the salt</h2>
+							<p>E-commerce, image, comunataire</p>
+						</a>
+						<a class="galleryItem">
+							<img src="http://placekitten.com/g/185/185"/>
+							<div class="overlay"></div>
+							<h2>Below the salt</h2>
+							<p>E-commerce, image, comunataire</p>
+						</a>
+						<a class="galleryItem">
+							<img src="http://placekitten.com/g/185/185"/>
+							<div class="overlay"></div>
+							<h2>Below the salt</h2>
+							<p>E-commerce, image, comunataire</p>
+						</a>
+						<a class="galleryItem">
+							<img src="http://placekitten.com/g/185/185"/>
+							<div class="overlay"></div>
+							<h2>Below the salt</h2>
+							<p>E-commerce, image, comunataire</p>
+						</a>
+					</div>
+				</div>
+				<div class="bottomShadow"></div>
+			</div>
+			<div class="topicContainer">
+				<div class="topic" id="offre">
+					<div class="topicHeadingBox">
+						<div class="line"></div>
+						<div class="container"><span>notre offre</span></div>
+						<div class="bubble"><span>voir tout</span></div>
+					</div>
+					<div class="galleryContainer">
+						<a class="galleryItem">
+							<div class="image" style="background: url('images/offreIcons.png') -128px 0px;"></div>
+							<h2>Below the salt</h2>
+							<p>Etiam ornare lectus libero, quis mollis est. Nunc mollis elit hendrerit felis consectetur interdum. Proin sit amet libero non nisi.</p>
+						</a>
+						<a class="galleryItem">
+							<div class="image" style="background: url('images/offreIcons.png') -256px 0px;"></div>
+							<h2>Below the salt</h2>
+							<p>Etiam ornare lectus libero, quis mollis est. Nunc mollis elit hendrerit felis consectetur interdum. Proin sit amet libero non nisi.</p>
+						</a>
+						<a class="galleryItem">
+							<div class="image" style="background: url('images/offreIcons.png') -384px 0px;"></div>
+							<h2>Below the salt</h2>
+							<p>Etiam ornare lectus libero, quis mollis est. Nunc mollis elit hendrerit felis consectetur interdum. Proin sit amet libero non nisi.</p>
+						</a>
+						<a class="galleryItem">
+							<div class="image" style="background: url('images/offreIcons.png') 0px 0px;"></div>
+							<h2>Below the salt</h2>
+							<p>Etiam ornare lectus libero, quis mollis est. Nunc mollis elit hendrerit felis consectetur interdum. Proin sit amet libero non nisi.</p>
+						</a>
+						<a class="galleryItem">
+							<div class="image" style="background: url('images/offreIcons.png') 128px 0px;"></div>
+							<h2>Below the salt</h2>
+							<p>Etiam ornare lectus libero, quis mollis est. Nunc mollis elit hendrerit felis consectetur interdum. Proin sit amet libero non nisi.</p>
+						</a>
+						<a class="galleryItem">
+							<div class="image" style="background: url('images/offreIcons.png') 256px 0px;"></div>
+							<h2>Below the salt</h2>
+							<p>Etiam ornare lectus libero, quis mollis est. Nunc mollis elit hendrerit felis consectetur interdum. Proin sit amet libero non nisi.</p>
+						</a>
+					</div>
+				</div>
+				<div class="bottomShadow"></div>
+			</div>
+			<div class="topicContainer odd">
+				<div class="topic" id="faire">
+					<div class="topicHeadingBox">
+						<div class="line"></div>
+						<div class="container"><span>notre realisations</span></div>
+						<div class="bubble"><span>voir tout</span></div>
+					</div>
+					<div class="galleryContainer">
+						<a class="galleryItem">
+							<div class="image" style="background: url('images/faireIcons.png') -128px 0px;"></div>
+							<h2>Below the salt</h2>
+							<p>Etiam ornare lectus libero, quis mollis est. Nunc mollis elit hendrerit felis consectetur interdum. Proin sit amet libero non nisi.</p>
+						</a>
+						<a class="galleryItem">
+							<div class="image" style="background: url('images/faireIcons.png') -256px 0px;"></div>
+							<h2>Below the salt</h2>
+							<p>Etiam ornare lectus libero, quis mollis est. Nunc mollis elit hendrerit felis consectetur interdum. Proin sit amet libero non nisi.</p>
+						</a>
+						<a class="galleryItem">
+							<div class="image" style="background: url('images/faireIcons.png') -384px 0px;"></div>
+							<h2>Below the salt</h2>
+							<p>Etiam ornare lectus libero, quis mollis est. Nunc mollis elit hendrerit felis consectetur interdum. Proin sit amet libero non nisi.</p>
+						</a>
+						<a class="galleryItem">
+							<div class="image" style="background: url('images/faireIcons.png') 0px 0px;"></div>
+							<h2>Below the salt</h2>
+							<p>Etiam ornare lectus libero, quis mollis est. Nunc mollis elit hendrerit felis consectetur interdum. Proin sit amet libero non nisi.</p>
+						</a>
+						<a class="galleryItem">
+							<div class="image" style="background: url('images/faireIcons.png') 128px 0px;"></div>
+							<h2>Below the salt</h2>
+							<p>Etiam ornare lectus libero, quis mollis est. Nunc mollis elit hendrerit felis consectetur interdum. Proin sit amet libero non nisi.</p>
+						</a>
+						<a class="galleryItem">
+							<div class="image" style="background: url('images/faireIcons.png') 256px 0px;"></div>
+							<h2>Below the salt</h2>
+							<p>Etiam ornare lectus libero, quis mollis est. Nunc mollis elit hendrerit felis consectetur interdum. Proin sit amet libero non nisi.</p>
+						</a>
+					</div>
+				</div>
+				<div class="bottomShadow"></div>
+			</div>
+			<div class="topicContainer">
+				<div class="topic" id="nous">
+					<div class="topicHeadingBox">
+						<div class="line"></div>
+						<div class="container"><span>que sommes-nous?</span></div>
+						<div class="bubble"><span>voir tout</span></div>
+					</div>
+					<div class="galleryContainer">
+						<a class="galleryItem">
+							<img src="http://placekitten.com/g/185/185"/>
+							<div class="overlay"></div>
+							<h2>Piere</h2>
+							<p>Etiam ornare lectus libero, quis mollis est. Proin sit amet libero non nisi.</p>
+						</a>
+						<a class="galleryItem">
+							<img src="http://placekitten.com/g/185/185"/>
+							<div class="overlay"></div>
+							<h2>Joan</h2>
+							<p>Etiam ornare lectus libero, quis mollis est. Proin sit amet libero non nisi.</p>
+						</a>
+						<a class="galleryItem">
+							<img src="http://placekitten.com/g/185/185"/>
+							<div class="overlay"></div>
+							<h2>Matthias</h2>
+							<p>Etiam ornare lectus libero, quis mollis est. Proin sit amet libero non nisi.</p>
+						</a>
+						<a class="galleryItem">
+							<img src="http://placekitten.com/g/185/185"/>
+							<div class="overlay"></div>
+							<h2>Stephane</h2>
+							<p>Etiam ornare lectus libero, quis mollis est. Proin sit amet libero non nisi.</p>
+						</a>
+					</div>
+				</div>
+				<div class="bottomShadow"></div>
+			</div>
+			<div class="topicContainer odd">
+				<div class="topic" id="contact">
+					<div class="topicHeadingBox">
+						<div class="line"></div>
+						<div class="container"><span>contact</span></div>
+					</div>
+					<div class="formContainer">
+						<form>
+							<input type="text" value="Nom"/>
+							<input type="text" value="E-mail"/>
+							<input type="text" value="Objet" />
+							<textarea>Message</textarea>
+							<input type="submit" value="Envoyer"/>
+						</form>
+						<div class="map">
+							<div class="buttons">
+								<div class="paris active">Paris</div>
+								<div class="sep"></div>
+								<div class="riga">Riga</div>
+							</div>
+							<div class="paris gmap">
+								<img src="http://maps.googleapis.com/maps/api/staticmap?size=458x251&zoom=14&markers=size:mid%7Ccolor:red%7C48.899036,2.387484&sensor=false"/>
+							</div>
+							<div class="riga gmap">
+								<img src="http://maps.googleapis.com/maps/api/staticmap?size=458x251&zoom=14&markers=size:mid%7Ccolor:red%7C56.960329,24.134251&sensor=false"/>
+							</div>
+							<div class="paris addr">
+								<h3>Paris</h3>
+								<p>7-15 Avenue de la Porte de la Villete, 75019 Paris</p>
+							</div>
+							<div class="riga addr">
+								<h3>Riga</h3>
+								<p>Terbatas 73, Riga</p>
+							</div>
+						</div>
+						<script>
+							$('#contact .buttons > .paris').click(function(){
+								$('#contact .buttons > .riga').css({backgroundPosition: '-229px 0px'});
+								$(this).css({backgroundPosition: '0px 0px'});
+								
+								$('#contact .gmap.riga').css({opacity: 0});
+								
+								$('#contact .addr').hide();
+								$('#contact .addr.paris').show();
+							});
+							
+							$('#contact .buttons > .riga').click(function(){
+								$('#contact .buttons > .paris').css({backgroundPosition: '229px 0px'});
+								$(this).css({backgroundPosition: '0px 0px'});
+								
+								$('#contact .gmap.riga').css({opacity: 1});
+								
+								$('#contact .addr').hide();
+								$('#contact .addr.riga').show();
+							});
+						</script>
+					</div>
+				</div>
+				<div class="footer">
+					<div class="container">
+						<div class="left">Digital Dream &copy; 2012</div>
+						<div class="right"></div>
+					</div>
+				</div>
+				<script>
+					$('#contact input[type=text], #contact textarea').click(function(){
+						this.value = '';
+					});
+				</script>
+			</div>
+		</div>
+  </body>
+</html>

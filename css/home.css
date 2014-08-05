@@ -1,0 +1,688 @@
+.topic#philosophy {
+	
+}
+
+
+ 
+.topic#philosophy > .moto {
+	padding: 50px 0px;
+}
+
+.topic#philosophy > .moto > * {
+	color: #fff;
+	text-shadow: -1px -1px 0px #111;
+}
+
+.topic#philosophy > .moto > div {
+	overflow: hidden;
+}
+
+.topic#philosophy > .moto > div > div:first-child {
+	float: left;
+}
+
+.topic#philosophy > .moto .we {
+	font-family: avantgarde-xltcn, 'Century Gothic';
+	font-size: 40px;
+	line-height: 1;
+}
+	
+.topic#philosophy > .moto .not {
+	font-family: avantgarde-mdcnobl, 'Century Gothic';
+	font-size: 40px;
+	text-transform: uppercase;
+	font-style: italic;
+	line-height: 1;
+}
+
+.topic#philosophy > .moto .georgia {
+	font-family: Georgia;
+	font-size: 19px;
+	font-style: italic;
+	line-height: 1.5;
+}
+
+.topic#philosophy > .moto .building {
+	float: right;
+	font-size: 76px;
+	line-height: 64px;
+	font-family: avantgarde-boldcn, 'Century Gothic';
+	text-transform: uppercase;
+}
+
+.topic#philosophy > .moto > div.machines {
+	font-size: 86px;
+	font-family: avantgarde-boldcn, 'Century Gothic';
+	text-transform: uppercase;
+}
+
+.topic#philosophy > .moto2 {
+	height: 256px;
+	background-image: url('../images/moto.png');
+}
+
+.topic#philosophy > .headingBox {
+	height: 31px;
+}
+
+.topic#philosophy > .headingBox > div.line {
+	position: relative;
+	top: 16px;
+	height: 1px;
+	margin-bottom: -1px;
+	background-color: #7f91bb;
+	box-shadow: -1px -1px 0px #263f7a;
+}
+
+.topic#philosophy > .headingBox > div.container {
+	height: 31px;
+	line-height: 31px;
+	margin-left: 20px;
+	padding: 0px 16px;
+	background-color: #2d4b91;
+	float: left;
+	position: relative;
+	z-index: 20;
+}
+
+.topic#philosophy > .headingBox > div.container > span {
+	text-transform: uppercase;
+	color: #7f91bb;
+	text-shadow: -1px -1px 0px #263f7b;
+	font-family: avantgarde-bkcn, 'Century Gothic';
+	font-size: 29px;
+}
+
+.topic#philosophy > .headingBox > div.bubble {
+	margin-top: 7px;
+	padding: 0px 8px;
+	height: 18px;
+	line-height: 18px;
+	font-size: 13px;
+	font-family: avantgarde-bkcn, 'Century Gothic';
+	border-radius: 9px;
+	background-color: #7f91bb;
+	color: #42588e;
+	text-transform: uppercase;
+	float: left;
+	box-shadow: -1px -1px 0px #263f7a;
+	position: relative;
+	z-index: 20;
+}
+
+.topic#philosophy > .list {
+	margin-top: 24px;
+}
+
+.topic#philosophy > .list > div {
+	font-family: avantgarde-xlt, 'Century Gothic';
+	font-size: 24px;
+	line-height: 24px;
+	height: 24px;
+	padding-left: 40px;
+	margin: 13px 0px;
+	color: #fff;
+	background: url('../images/zIcon.png') no-repeat;
+}
+
+
+
+
+
+
+
+
+
+.topic#realisations {
+	padding-top: 32px;
+}
+
+.topic#realisations > .galleryContainer {
+	margin: 0px -10px;
+	overflow: auto;
+}
+
+.topic#realisations > .galleryContainer > a.galleryItem {
+	float: left;
+	margin: 0px 10px;
+	margin-top: 32px;
+	width: 180px;
+	height: 250px;
+	overflow: hidden;
+	cursor: pointer;
+	position: relative;
+	display: block;
+}
+
+.topic#realisations > .galleryContainer > a.galleryItem > div.overlay {
+	background: #00b4cc url('../images/arrow.png') no-repeat 50% 50%;
+	height: 180px;
+	width: 180px;
+	position: absolute;
+	top: 0px;
+	opacity: 0;
+	
+	transition: all .2s;
+	-moz-transition: all .2s; /* Firefox 4 */
+	-webkit-transition: all .2s; /* Safari and Chrome */
+	-o-transition: all .2s; /* Opera */
+}
+
+.topic#realisations > .galleryContainer > a.galleryItem > img {
+	display: block;
+	height: 178px;
+	border: 1px solid #979797;
+	overflow: hidden;
+}
+
+.topic#realisations > .galleryContainer > a.galleryItem > h2 {
+	margin-top: 8px;
+	color: #262929;
+	font-family: avantgarde-bk, 'Century Gothic';
+	font-size: 16px;
+	
+	transition: all .2s;
+	-moz-transition: all .2s; /* Firefox 4 */
+	-webkit-transition: all .2s; /* Safari and Chrome */
+	-o-transition: all .2s; /* Opera */
+}
+
+.topic#realisations > .galleryContainer > a.galleryItem > p {
+	margin-top: 6px;
+	color: #b2b2b2;
+	font-family: avantgarde-bkobl, 'Century Gothic';
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.topic#realisations > .galleryContainer > a.galleryItem:hover > h2 {
+	color: #00b4cc;
+	
+	transition: opacity .4s;
+	-moz-transition: opacity .4s; /* Firefox 4 */
+	-webkit-transition: opacity .4s; /* Safari and Chrome */
+	-o-transition: opacity .4s; /* Opera */
+}
+
+.topic#realisations > .galleryContainer > a.galleryItem:hover > div.overlay {
+	opacity: .7;
+	
+	transition: opacity .4s;
+	-moz-transition: opacity .4s; /* Firefox 4 */
+	-webkit-transition: opacity .4s; /* Safari and Chrome */
+	-o-transition: opacity .4s; /* Opera */
+}
+.topic#realisations {
+	padding-top: 32px;
+}
+
+.topic#realisations > .galleryContainer {
+	margin: 0px -10px;
+	overflow: auto;
+}
+
+.topic#realisations > .galleryContainer > a.galleryItem {
+	float: left;
+	margin: 0px 10px;
+	margin-top: 32px;
+	width: 180px;
+	height: 250px;
+	overflow: hidden;
+	cursor: pointer;
+	position: relative;
+	display: block;
+}
+
+.topic#realisations > .galleryContainer > a.galleryItem > div.overlay {
+	background: #00b4cc url('../images/arrow.png') no-repeat 50% 50%;
+	height: 180px;
+	width: 180px;
+	position: absolute;
+	top: 0px;
+	opacity: 0;
+	
+	transition: all .2s;
+	-moz-transition: all .2s; /* Firefox 4 */
+	-webkit-transition: all .2s; /* Safari and Chrome */
+	-o-transition: all .2s; /* Opera */
+}
+
+.topic#realisations > .galleryContainer > a.galleryItem > img {
+	display: block;
+	height: 178px;
+	border: 1px solid #979797;
+	overflow: hidden;
+}
+
+.topic#realisations > .galleryContainer > a.galleryItem > h2 {
+	margin-top: 8px;
+	color: #262929;
+	font-family: avantgarde-bk, 'Century Gothic';
+	font-size: 16px;
+	
+	transition: all .2s;
+	-moz-transition: all .2s; /* Firefox 4 */
+	-webkit-transition: all .2s; /* Safari and Chrome */
+	-o-transition: all .2s; /* Opera */
+}
+
+.topic#realisations > .galleryContainer > a.galleryItem > p {
+	margin-top: 6px;
+	color: #b2b2b2;
+	font-family: avantgarde-bk, 'Century Gothic';
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.topic#realisations > .galleryContainer > a.galleryItem:hover > h2 {
+	color: #00b4cc;
+	
+	transition: opacity .4s;
+	-moz-transition: opacity .4s; /* Firefox 4 */
+	-webkit-transition: opacity .4s; /* Safari and Chrome */
+	-o-transition: opacity .4s; /* Opera */
+}
+
+.topic#realisations > .galleryContainer > a.galleryItem:hover > div.overlay {
+	opacity: .7;
+	
+	transition: opacity .4s;
+	-moz-transition: opacity .4s; /* Firefox 4 */
+	-webkit-transition: opacity .4s; /* Safari and Chrome */
+	-o-transition: opacity .4s; /* Opera */
+}
+
+
+
+
+
+
+.topic#offre {
+	padding-top: 32px;
+}
+
+.topic#offre > .galleryContainer {
+	overflow: auto;
+}
+
+.topic#offre > .galleryContainer > a.galleryItem {
+	float: left;
+	margin: 0px 5px;
+	margin-top: 32px;
+	width: 250px;
+	height: 250px;
+	overflow: visible;
+	cursor: pointer;
+	position: relative;
+	display: block;
+}
+
+.topic#offre > .galleryContainer > a.galleryItem > .image {
+	display: block;
+	height: 128px;
+	width: 128px;
+	margin: 0px 61px;
+	background: no-repeat;
+}
+
+.topic#offre > .galleryContainer > a.galleryItem > h2 {
+	margin-top: 8px;
+	color: #fbfbfb;
+	font-family: avantgarde-bk, 'Century Gothic';
+	font-size: 16px;
+	font-weight: normal;
+	text-align: center;
+	
+	transition: all .4s;
+	-moz-transition: all .4s; /* Firefox 4 */
+	-webkit-transition: all .4s; /* Safari and Chrome */
+	-o-transition: all .4s; /* Opera */
+}
+
+.topic#offre > .galleryContainer > a.galleryItem > p {
+	margin-top: 6px;
+	color: #969898;
+	font-family: avantgarde-bk, 'Century Gothic';
+	font-size: 13px;
+	font-weight: normal;
+	text-align: center;
+}
+
+.topic#offre > .galleryContainer > a.galleryItem:hover > h2 {
+	color: #00b4cc;
+	
+	transition: opacity .6s;
+	-moz-transition: opacity .6s; /* Firefox 4 */
+	-webkit-transition: opacity .6s; /* Safari and Chrome */
+	-o-transition: opacity .6s; /* Opera */
+}
+
+
+
+
+
+
+
+
+.topic#faire {
+	padding-top: 32px;
+}
+
+.topic#faire > .galleryContainer {
+	overflow: auto;
+}
+
+.topic#faire > .galleryContainer > a.galleryItem {
+	float: left;
+	margin: 0px 5px;
+	margin-top: 32px;
+	width: 250px;
+	height: 250px;
+	overflow: visible;
+	cursor: pointer;
+	position: relative;
+	display: block;
+}
+
+.topic#faire > .galleryContainer > a.galleryItem > .image {
+	display: block;
+	height: 128px;
+	width: 128px;
+	margin: 0px 61px;
+	background: no-repeat;
+}
+
+.topic#faire > .galleryContainer > a.galleryItem > h2 {
+	margin-top: 8px;
+	color: #4a484b;
+	font-family: avantgarde-bk, 'Century Gothic';
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	
+	transition: all .4s;
+	-moz-transition: all .4s; /* Firefox 4 */
+	-webkit-transition: all .4s; /* Safari and Chrome */
+	-o-transition: all .4s; /* Opera */
+}
+
+.topic#faire > .galleryContainer > a.galleryItem > p {
+	margin-top: 6px;
+	color: #aeafb1;
+	font-family: avantgarde-bk, 'Century Gothic';
+	font-size: 13px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.topic#faire > .galleryContainer > a.galleryItem:hover > h2 {
+	color: #00b4cc;
+	
+	transition: opacity .6s;
+	-moz-transition: opacity .6s; /* Firefox 4 */
+	-webkit-transition: opacity .6s; /* Safari and Chrome */
+	-o-transition: opacity .6s; /* Opera */
+}
+
+
+
+
+
+
+
+
+
+
+
+.topic#nous {
+	padding-top: 32px;
+}
+
+.topic#nous > .galleryContainer {
+	margin: 0px -10px;
+	overflow: auto;
+}
+
+.topic#nous > .galleryContainer > a.galleryItem {
+	float: left;
+	margin: 0px 10px;
+	margin-top: 32px;
+	width: 180px;
+	height: 280px;
+	overflow: hidden;
+	cursor: pointer;
+	position: relative;
+	display: block;
+}
+
+.topic#nous > .galleryContainer > a.galleryItem > div.overlay {
+	background: #00b4cc url('../images/arrow.png') no-repeat 50% 50%;
+	height: 180px;
+	width: 180px;
+	position: absolute;
+	top: 0px;
+	opacity: 0;
+	
+	transition: all .2s;
+	-moz-transition: all .2s; /* Firefox 4 */
+	-webkit-transition: all .2s; /* Safari and Chrome */
+	-o-transition: all .2s; /* Opera */
+}
+
+.topic#nous > .galleryContainer > a.galleryItem > img {
+	display: block;
+	height: 178px;
+	border: 1px solid #979797;
+	overflow: hidden;
+}
+
+.topic#nous > .galleryContainer > a.galleryItem > h2 {
+	margin-top: 8px;
+	color: #fcfcfc;
+	font-family: avantgarde-bk, 'Century Gothic';
+	font-size: 16px;
+	font-weight: normal;
+	
+	transition: all .2s;
+	-moz-transition: all .2s; /* Firefox 4 */
+	-webkit-transition: all .2s; /* Safari and Chrome */
+	-o-transition: all .2s; /* Opera */
+}
+
+.topic#nous > .galleryContainer > a.galleryItem > p {
+	margin-top: 6px;
+	color: #959797;
+	font-family: avantgarde-bk, 'Century Gothic';
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.topic#nous > .galleryContainer > a.galleryItem:hover > h2 {
+	color: #00b4cc;
+	
+	transition: opacity .4s;
+	-moz-transition: opacity .4s; /* Firefox 4 */
+	-webkit-transition: opacity .4s; /* Safari and Chrome */
+	-o-transition: opacity .4s; /* Opera */
+}
+
+.topic#nous > .galleryContainer > a.galleryItem:hover > div.overlay {
+	opacity: .7;
+	
+	transition: opacity .4s;
+	-moz-transition: opacity .4s; /* Firefox 4 */
+	-webkit-transition: opacity .4s; /* Safari and Chrome */
+	-o-transition: opacity .4s; /* Opera */
+}
+
+
+
+
+
+
+
+
+.topic#contact {
+	padding-top: 32px;
+}
+
+.topic#contact > .formContainer {
+	overflow: auto;
+	margin-top: 30px;
+}
+
+.topic#contact > .formContainer > form {
+	display: block;
+	float: left;
+	width: 300px;
+}
+
+.topic#contact > .formContainer > form > input[type=text] {
+	margin-bottom: 8px;
+	width: 290px;
+	background: #ddd;
+	border: 1px solid #ccc;
+	text-shadow: -1px 0px 0px #bbb;
+}
+
+.topic#contact > .formContainer > form > textarea {
+	margin-bottom: 8px;
+	width: 290px;
+	height: 120px;
+	background: #ddd;
+	border: 1px solid #ccc;
+	text-shadow: -1px 0px 0px #bbb;
+}
+
+.topic#contact > .formContainer > form > input[type=submit] {
+	float: right;
+	background: #ddd;
+}
+
+.topic#contact > .formContainer > .map {
+	float: right;
+	width: 460px;
+	height: 296px;
+	position: relative;
+}
+
+.topic#contact .map > .buttons {
+	position: absolute;
+	top: 0px;
+	height: 56px;
+	z-index: 50;
+}
+
+.topic#contact .map > .buttons > div {
+	height: 56px;
+	width: 229px;
+	background: url('../images/mapTabs.png') 100% 0%;
+	float: left;
+	
+	font-family: avantgarde-bkcn, 'Century Gothic';
+	font-size: 18px;
+	text-align: center;
+	line-height: 43px;
+	color: #fff;
+	
+	cursor: pointer;
+
+	transition: all .6s ease-out;
+	-moz-transition: all .6s ease-out; /* Firefox 4 */
+	-webkit-transition: all .6s ease-out; /* Safari and Chrome */
+	-o-transition: all .6s ease-out; /* Opera */
+	
+}
+
+.topic#contact .map > .buttons > div.sep {
+	width: 2px;
+	background: url('../images/mapTabsSep.png') no-repeat;
+}
+
+.topic#contact .map > .buttons > div.paris {
+	background-position: 0px 0px;
+}
+	
+.topic#contact .map > .gmap {
+	z-index: 40;
+	position: absolute;
+	top: 42px;
+	background-color: #bbb;
+	border: 1px solid #d6d8d9;
+	height: 251px;
+	width: 458px;
+	
+	transition: opacity .6s;
+	-moz-transition: opacity .6s; /* Firefox 4 */
+	-webkit-transition: opacity .6s; /* Safari and Chrome */
+	-o-transition: opacity .6s; /* Opera */
+}
+
+.topic#contact .map > .gmap > img {
+	display: block;
+}
+
+.topic#contact .map > .addr {
+	z-index: 50;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	padding: 8px;
+
+	background: url('../images/blueTr.png');
+}
+
+.topic#contact .map > .gmap.riga {
+	opacity: 0;
+}
+
+.topic#contact .map > .addr.riga {
+	display: none;
+}
+
+.topic#contact .map > .addr h3 {
+	color: #fff;
+	font-family: avantgarde-bk, 'Century Gothic';
+	font-weight: normal;
+	font-size: 16px;
+}
+
+.topic#contact .map > .addr p {
+	color: #fff;
+	font-family: avantgarde-bk, 'Century Gothic';
+	font-weight: normal;
+	font-size: 14px;
+}
+
+.topicContainer > .footer {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 54px;
+	background-color: #00b4cc;
+}
+
+.topicContainer > .footer > .container {
+	margin: 0 auto;
+	width: 980px;
+	height: 54px;
+}
+
+.topicContainer > .footer > .container > .left {
+	float: left;
+	height: 38px;
+	padding-top: 16px;
+	padding-left: 75px;
+	background: url('../images/footerLogo.png') no-repeat left bottom;
+	color: #fff;
+	font-size: 30px;
+	line-height: 32px;
+	font-family: avantgarde-xlt, 'Century Gothic';
+}
+
+.topicContainer > .footer > .container > .right {
+	float: right;
+	width: 154px;
+	height: 54px;
+	background: url('../images/journey.png') no-repeat right bottom;
+}

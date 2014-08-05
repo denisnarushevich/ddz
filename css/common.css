@@ -1,0 +1,427 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	outline: 0px;
+	border: 0px;
+	text-decoration: none;
+}
+
+@font-face {
+	font-family: avantgarde-bk;
+	src: url('../fonts/ITCAvantGardeStd-Bk.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: avantgarde-bkcn;
+	src: url('../fonts/ITCAvantGardeStd-BkCn.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: avantgarde-bkobl;
+	src: url('../fonts/ITCAvantGardeStd-BkObl.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: avantgarde-xlt;
+	src: url('../fonts/ITCAvantGardeStd-XLt.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: avantgarde-xltcn;
+	src: url('../fonts/ITCAvantGardeStd-XLtcn.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: avantgarde-boldcn;
+	src: url('../fonts/ITCAvantGardeStd-BoldCn.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: avantgarde-mdcnobl;
+	src: url('../fonts/ITCAvantGardeStd-MdCnObl.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html, body {
+	height: 100%;
+}
+
+input[type=text], textarea {
+	display: block;
+	height: 16px;
+	padding: 7px 4px;
+	border: 1px solid #727474;
+	background-color: #818383;
+	
+	color: #2c2f2f;
+	font-family: avantgarde-bkcn, 'Century Gothic';
+	line-height: 16px;
+	font-size: 18px;
+	font-weight: normal;
+	text-shadow: -1px 0px 0px #595b5b;
+	
+	transition: all .4s;
+	-moz-transition: all .4s; /* Firefox 4 */
+	-webkit-transition: all .4s; /* Safari and Chrome */
+	-o-transition: all .4s; /* Opera */
+}
+
+input[type=text]:focus, textarea:focus,
+input[type=text]:hover, textarea:hover {
+	background-color: #fff !important;
+	border: 1px solid #d9d9d9 !important;
+	text-shadow: -1px 0px 0px #9d9e9e !important;
+	
+	transition: all .2s;
+	-moz-transition: all .2s; /* Firefox 4 */
+	-webkit-transition: all .2s; /* Safari and Chrome */
+	-o-transition: all .2s; /* Opera */
+}
+
+input[type=submit] {
+	display: block;
+	height: 32px;
+	padding: 0px 32px;
+	background-color: #818383;
+	
+	color: #2c2f2f;
+	font-family: avantgarde-bkcn, 'Century Gothic';
+	line-height: 32px;
+	font-size: 18px;
+	text-shadow: -1px 0px 0px #595b5b;
+	
+	cursor: pointer;
+	
+	transition: all .4s;
+	-moz-transition: all .4s; /* Firefox 4 */
+	-webkit-transition: all .4s; /* Safari and Chrome */
+	-o-transition: all .4s; /* Opera */
+}
+
+input[type=submit]:hover {
+	background-color: #fff !important;
+	text-shadow: -1px 0px 0px #9d9e9e !important;
+	
+	transition: all .2s;
+	-moz-transition: all .2s; /* Firefox 4 */
+	-webkit-transition: all .2s; /* Safari and Chrome */
+	-o-transition: all .2s; /* Opera */
+}
+
+.navToolContainer {
+	width: 980px;
+	margin: 0 auto;
+	z-index: 100;
+	position: relative;
+}
+
+.navToolContainer > #navTool {
+	top: 0px;
+	position: fixed;
+	height: 100%;
+	overflow: visible;
+}
+
+#navTool .logos {
+	height: 0px;
+	width: 142px;
+	margin-top: 16px;
+	margin-bottom: -16px;
+}
+
+#navTool .logos > .white {
+	width: 140px;
+	margin-left: 2px;
+	background: url('../images/logo0.png') no-repeat;
+}
+
+#navTool .logos > .gray {
+	width: 140px;
+	margin-left: 2px;
+	background: url('../images/logo1.png') no-repeat;
+}
+
+#navTool .guides {
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+#navTool .guides > div {
+	position: absolute;
+}
+
+#navTool .guides > div > .orange {
+	width: 1px;
+	margin: 0 auto;
+	background-color: #00b4cc;
+}
+
+#navTool .guides > div > .blue {
+	width: 1px;
+	margin: 0 auto;
+	background-color: #7f7f7f;
+}
+
+#navTool .guides > div > .name {
+	color: #7f7f7f;
+	white-space: nowrap;
+	font-family: avantgarde-bkcn, 'Century Gothic';
+	text-transform: uppercase;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+#navTool .guides > div > .name.active, #navTool .guides > div > .name:hover {
+	color: #00b4cc;
+}
+
+#navTool .guides > div > .dot {
+	width: 7px;
+	height: 7px;
+	margin: 0 auto;
+	background: url('../images/navDotBlue.png') no-repeat;
+}
+
+#navTool .guides > div > .dot.active {
+	background-image: url('../images/navDotOrange.png');
+}
+
+#page {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	z-index: 10;
+}
+
+#page .topicContainer {
+	background: #2b2e2e url('../images/pageBg.png');
+	min-height: 100%;
+	position: relative;
+}
+
+#page .topicContainer.odd{
+	background-color: #fff;
+	background-image: none;
+}
+
+#page .topicContainer > .bottomShadow {
+	background: url('../images/gradientShade.png');
+	width: 100%;
+	height: 32px;
+	position: absolute;
+	bottom: 0px;
+}
+
+
+
+
+
+#page .topicContainer .topicHeadingBox {
+	height: 31px;
+}
+
+#page .topicContainer .topicHeadingBox > div.line {
+	position: relative;
+	top: 16px;
+	height: 1px;
+	margin-bottom: -1px;
+	background-color: #4e5050;
+	box-shadow: -1px -1px 0px #181a1a;
+}
+
+#page .topicContainer.odd .topicHeadingBox > div.line {
+	background-color: #4a484b;
+	box-shadow: 0px 0px 0px #263f7a;
+}
+
+#page .topicContainer .topicHeadingBox > div.container {
+	height: 31px;
+	line-height: 31px;
+	margin-left: 20px;
+	padding: 0px 16px;
+	background: #2d4b91 url('../images/pageBg.png');
+	float: left;
+	position: relative;
+}
+
+#page .topicContainer.odd .topicHeadingBox > div.container {
+	background-color: #fff;
+	background-image: none;
+}
+
+#page .topicContainer .topicHeadingBox > div.container > span {
+	text-transform: uppercase;
+	color: #00b4cc;
+	text-shadow: -1px -1px 0px #1b1d1d;
+	font-family: avantgarde-bkcn, 'Century Gothic';
+	font-size: 36px;
+}
+
+#page .topicContainer.odd .topicHeadingBox > div.container > span {
+	color: #343838;
+	text-shadow: -1px -1px 0px #a0a2a2;
+}
+
+#page .topicContainer .topicHeadingBox > div.bubble {
+	margin-top: 7px;
+	padding: 0px 8px;
+	height: 18px;
+	line-height: 18px;
+	font-size: 13px;
+	font-family: avantgarde-bkcn, 'Century Gothic';
+	border-radius: 9px;
+	background-color: #00b4cc;
+	color: #1a535b;
+	text-transform: uppercase;
+	float: left;
+	box-shadow: -1px -1px 0px #0994a6;
+	position: relative;
+}
+
+#page .topicContainer.odd .topicHeadingBox > div.bubble {
+	color: #b4b6b6;
+	background-color: #343838;
+	box-shadow: -1px -1px 0px #262929;
+}
+
+
+
+
+
+#page > .topicContainer > .topic > .roundBox {
+	padding: 6px 6px;
+	background-color: #1a1c1c;
+	soverflow: auto;
+	border-radius: 9px;
+	margin-top: 20px;
+}
+
+#page > .topicContainer > .topic > .roundBox > a {
+	display: inline-block;
+	height: 16px;
+	font-size: 16px;
+	font-family: avantgarde-bkcn, 'Century Gothic';
+	color: #474747;
+	text-transform: uppercase;
+	margin: 6px 10px;
+	cursor: pointer;
+}
+
+#page > .topicContainer > .topic > .roundBox > a:hover {
+	color: #efefef;
+}
+
+#page > .topicContainer > .topic > .roundBox > .sub > div {
+	overflow: auto;
+}
+
+#page > .topicContainer > .topic > .roundBox > .sub > div > a {
+	background: url('../images/listDot.png') no-repeat 4px 50%;
+	padding-left: 16px;
+	float: left;
+	height: 18px;
+	line-height: 18px;
+	font-size: 14px;
+	font-family: avantgarde-bkcn, 'Century Gothic';
+	color: #7f7f7f;
+	margin: 6px 10px;
+	cursor: pointer;
+}
+
+#page > .topicContainer > .topic > .roundBox > .sub > div > a:hover {
+	color: #efefef;
+}
+	
+
+
+
+#page .topic {
+	width: 780px;
+	margin: 0 auto;
+	padding: 12px 10px 60px 190px;
+}
+
+.topic > .mainMenu {
+	padding-bottom: 16px;
+	overflow: auto;
+}
+
+.topic > .mainMenu > .left {
+	overflow: auto;
+	float: left;
+	width: 658px;
+}
+
+.topic > .mainMenu > .right {
+	overflow: auto;
+	float: right;
+	width: 122px;
+}
+
+.topic > .mainMenu > .left > a {
+	float: left;
+	display: block;
+	height: 26px;
+	padding-top: 4px;
+	margin-right: 24px;
+	
+	line-height: 26px;
+	
+	color: #bbc4da;
+	font-family: avantgarde-bkcn, 'Century Gothic';
+	font-size: 14px;
+	text-transform: uppercase;
+	
+	text-shadow: -1px -1px 0px #111;
+}
+
+.topic > .mainMenu > .left > a:hover {
+	text-decoration: underline;
+	color: #fff;
+}
+
+.topic > .mainMenu > .right > a {
+	float: right;
+	display: block;
+	width: 30px;
+	height: 30px;
+	background: url('../images/socialIconSet.png') no-repeat left top;
+	opacity: .8;
+}
+
+.topic > .mainMenu > .right > a.linkedin {
+	margin-left: 16px;
+	background-position: -30px 0px
+}
+
+.topic > .mainMenu > .right > a.twitter {
+	margin-left: 16px;
+	background-position: -60px 0px
+}
+
+.topic > .mainMenu > .right > a.socialButton:hover {
+	opacity: 1;
+}
+
+.topic > .line {
+	height: 1px;
+	background-color: #4e5050;
+	box-shadow: -1px -1px 0px #181a1a;
+}
+
+
+
